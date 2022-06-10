@@ -33,6 +33,10 @@ namespace patterns // Note: actual namespace depends on the project name.
             factory.GetSahpe("circle").draw();
 
             //consume repository
+            //The benefit of the repository pattern is that we do not create concrete class objects, rather we create objects of an interface.
+            //we assign ref of concrete class, my interface has all the function sigature.
+            //so in case i can assign another class object having the same interface implemented.
+
             IstudentRepository istudentrepo;
             istudentrepo = new Studentrepo();
             var students = from s in istudentrepo.GetAllStudents()
