@@ -192,3 +192,10 @@ public class Studentrepo : IstudentRepository, IDisposable
         GC.SuppressFinalize(this);
     }
 }
+
+/// <summary>
+/// creating the sample for new abstruct factory pattern
+/// </summary>
+public class abstractfactory{
+
+}
